@@ -1,0 +1,19 @@
+2026-04-09 14:29:39,408 DEBUG cd frappe-bench && uv venv env --seed --python python3.11
+2026-04-09 14:29:41,508 LOG Getting frappe
+2026-04-09 14:29:41,508 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2026-04-09 14:29:47,165 LOG Installing frappe
+2026-04-09 14:29:47,166 DEBUG cd /Users/rudrapandey/Downloads/bid_tracker/frappe-bench && uv pip install --quiet --upgrade -e /Users/rudrapandey/Downloads/bid_tracker/frappe-bench/apps/frappe  --python /Users/rudrapandey/Downloads/bid_tracker/frappe-bench/env/bin/python
+2026-04-09 14:30:07,174 DEBUG cd /Users/rudrapandey/Downloads/bid_tracker/frappe-bench/apps/frappe && yarn install --check-files
+2026-04-09 14:31:35,691 DEBUG cd frappe-bench && bench build
+2026-04-09 14:31:36,076 INFO /Users/rudrapandey/.local/bin/bench build
+2026-04-09 14:31:57,186 LOG setting up backups
+2026-04-09 14:31:57,251 LOG backups were set up
+2026-04-09 14:31:57,252 INFO Bench frappe-bench initialized
+2026-04-09 14:37:34,412 INFO /Users/rudrapandey/.local/bin/bench get-app erpnext --branch version-15
+2026-04-09 14:37:34,937 LOG Getting erpnext
+2026-04-09 14:37:34,938 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2026-04-09 14:37:40,670 LOG Installing erpnext
+2026-04-09 14:37:40,671 DEBUG cd /Users/rudrapandey/Downloads/bid_tracker/frappe-bench && uv pip install --quiet --upgrade -e /Users/rudrapandey/Downloads/bid_tracker/frappe-bench/apps/erpnext  --python /Users/rudrapandey/Downloads/bid_tracker/frappe-bench/env/bin/python
+2026-04-09 14:38:15,418 DEBUG cd /Users/rudrapandey/Downloads/bid_tracker/frappe-bench/apps/erpnext && yarn install --check-files
+2026-04-09 14:38:18,501 DEBUG bench build --app erpnext
+2026-04-09 14:38:19,223 INFO /Users/rudrapandey/.local/bin/bench build --app erpnext
