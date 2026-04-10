@@ -1,0 +1,140 @@
+{
+  "doctype": "DocType",
+  "name": "Bid Record",
+  "module": "Bid Tracker",
+  "custom": 0,
+  "istable": 0,
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "autoname": "format:BR-.YYYY.-.#####",
+  "track_changes": 1,
+  "quick_entry": 0,
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "fields": [
+    {
+      "fieldname": "bid_title",
+      "label": "Bid Title",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "opportunity",
+      "label": "Opportunity",
+      "fieldtype": "Link",
+      "options": "Opportunity",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "customer",
+      "label": "Customer",
+      "fieldtype": "Link",
+      "options": "Customer"
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Qualifying\nActive\nSubmitted\nWon\nLost\nWithdrawn",
+      "default": "Qualifying",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "estimated_contract_value",
+      "label": "Estimated Contract Value",
+      "fieldtype": "Currency",
+      "reqd": 1
+    },
+    {
+      "fieldname": "pursuit_decision_date",
+      "label": "Pursuit Decision Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "bid_submission_date",
+      "label": "Bid Submission Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "bid_owner",
+      "label": "Bid Owner",
+      "fieldtype": "Link",
+      "options": "User",
+      "default": "__user"
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "total_timesheet_cost",
+      "label": "Total Timesheet Cost",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_manual_cost",
+      "label": "Total Manual Cost",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_bid_cost",
+      "label": "Total Bid Cost",
+      "fieldtype": "Currency",
+      "read_only": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "estimated_profit",
+      "label": "Estimated Profit",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "roi_ratio",
+      "label": "ROI Ratio",
+      "fieldtype": "Percent",
+      "read_only": 1
+    },
+    {
+      "fieldname": "section_break_notes",
+      "fieldtype": "Section Break",
+      "label": "Notes"
+    },
+    {
+      "fieldname": "notes",
+      "label": "Notes",
+      "fieldtype": "Small Text"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 0,
+      "cancel": 0,
+      "amend": 0
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Sales Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Employee",
+      "read": 1
+    }
+  ]
+}
