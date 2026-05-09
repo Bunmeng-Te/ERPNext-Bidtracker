@@ -1,9 +1,0 @@
-{
-  "doctype": "Report",
-  "name": "Bid P&L Summary",
-  "module": "Bid Tracker",
-  "report_name": "Bid P&L Summary",
-  "ref_doctype": "Bid Record",
-  "report_type": "Query Report",
-  "is_standard": "Yes"
-}
