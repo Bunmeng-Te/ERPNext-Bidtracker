@@ -1,0 +1,9 @@
+{
+  "doctype": "Report",
+  "name": "Bid PnL Summary",
+  "module": "Bid Management",
+  "report_name": "Bid PnL Summary",
+  "ref_doctype": "Bid Record",
+  "report_type": "Script Report",
+  "is_standard": "Yes"
+}
