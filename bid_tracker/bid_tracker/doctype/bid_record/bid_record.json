@@ -20,6 +20,13 @@
       "in_list_view": 1
     },
     {
+      "fieldname": "sector",
+      "label": "Sector",
+      "fieldtype": "Select",
+      "options": "Government\nConstruction\nHealthcare\nEducation\nTechnology\nFinance\nOther",
+      "in_list_view": 1
+    },
+    {
       "fieldname": "opportunity",
       "label": "Opportunity",
       "fieldtype": "Link",
@@ -62,6 +69,12 @@
       "fieldtype": "Link",
       "options": "User",
       "default": "__user"
+    },
+    {
+      "fieldname": "assigned_team_members",
+      "label": "Assigned Team Members",
+      "fieldtype": "Table MultiSelect",
+      "options": "User"
     },
     {
       "fieldname": "column_break_1",
