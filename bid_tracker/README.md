@@ -20,7 +20,6 @@ It implements:
 - `bid_tracker/bid_tracker/report/bid_pnl_summary/` - query report
 
 ## Install (inside bench)
-## Test
 
 ```bash
 bench new-app bid_tracker
