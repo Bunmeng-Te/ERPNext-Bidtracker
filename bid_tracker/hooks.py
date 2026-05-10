@@ -5,8 +5,20 @@ app_description = "Custom ERPNext module for pre-contract bid tracking"
 app_email = "support@example.com"
 app_license = "MIT"
 
-after_install = "bid_management.install.after_install"
+after_install = "bid_tracker.install.after_install"
 
-doctypes_js = {
+doctype_js = {
     "Bid Record": "public/js/bid_record.js",
+}
+
+doc_events = {
+    "Timesheet": {
+        "on_update": "bid_tracker.bid_management.api.update_bid_record_totals",
+        "on_submit": "bid_tracker.bid_management.api.update_bid_record_totals",
+        "on_cancel": "bid_tracker.bid_management.api.update_bid_record_totals",
+    },
+    "Bid Cost Entry": {
+        "on_update": "bid_tracker.bid_management.api.update_bid_record_totals",
+        "on_trash": "bid_tracker.bid_management.api.update_bid_record_totals",
+    }
 }

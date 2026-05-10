@@ -5,6 +5,7 @@ from frappe.custom.doctype.property_setter.property_setter import make_property_
 
 def after_install():
     create_timesheet_bid_field()
+    create_employee_hourly_rate_field()
     set_bid_cost_entry_naming()
 
 
@@ -22,6 +23,23 @@ def create_timesheet_bid_field():
             }
         ]
     }
+
+    create_custom_fields(custom_fields, update=True)
+
+
+def create_employee_hourly_rate_field():
+    custom_fields = {
+        "Employee": [
+            {
+                "fieldname": "hourly_rate",
+                "label": "Hourly Rate",
+                "fieldtype": "Currency",
+                "insert_after": "company",
+                "default": 50,
+            }
+        ]
+    }
+
     create_custom_fields(custom_fields, update=True)
 
 
@@ -35,6 +53,7 @@ def set_bid_cost_entry_naming():
             "Data",
             validate_fields_for_doctype=False,
         )
+
         make_property_setter(
             "Bid Cost Entry",
             None,
@@ -43,6 +62,9 @@ def set_bid_cost_entry_naming():
             "Data",
             validate_fields_for_doctype=False,
         )
+
     except Exception:
-        # Safe fallback if property already exists or version differs.
-        frappe.log_error(frappe.get_traceback(), "Bid Tracker install warning")
+        frappe.log_error(
+            frappe.get_traceback(),
+            "Bid Tracker install warning"
+        )

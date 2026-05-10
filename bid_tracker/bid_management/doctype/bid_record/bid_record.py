@@ -32,31 +32,28 @@ class BidRecord(Document):
         )[0][0]
 
     def get_timesheet_cost(self):
-        # Prefer Timesheet.costing_amount if available on your ERPNext version.
-        if frappe.db.has_column("Timesheet", "costing_amount"):
-            return frappe.db.sql(
-                """
-                SELECT COALESCE(SUM(costing_amount), 0)
-                FROM `tabTimesheet`
-                WHERE bid_record = %s
-                """,
-                (self.name,),
-            )[0][0]
+        timesheets = frappe.db.sql(
+            """
+            SELECT employee, total_hours
+            FROM `tabTimesheet`
+            WHERE bid_record = %s
+            """,
+            (self.name,),
+            as_dict=True
+        )
 
-        # Fallback: estimate labour cost using total_hours * per-hour rate.
-        # You can replace 50 with a field or employee costing rule in your environment.
-        fallback_hourly_rate = 50
-        if frappe.db.has_column("Timesheet", "total_hours"):
-            hours = frappe.db.sql(
-                """
-                SELECT COALESCE(SUM(total_hours), 0)
-                FROM `tabTimesheet`
-                WHERE bid_record = %s
-                """,
-                (self.name,),
-            )[0][0]
-            return flt(hours) * fallback_hourly_rate
-        return 0
+        total_cost = 0
+
+        for ts in timesheets:
+            hourly_rate = frappe.db.get_value(
+                "Employee",
+                ts.employee,
+                "hourly_rate"
+            ) or 0
+
+            total_cost += flt(ts.total_hours) * flt(hourly_rate)
+
+        return total_cost
 
 
 def flt(value):
