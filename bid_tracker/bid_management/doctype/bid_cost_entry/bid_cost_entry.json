@@ -6,9 +6,17 @@
   "istable": 0,
   "editable_grid": 0,
   "engine": "InnoDB",
-  "autoname": "format:BCE-.YYYY.-.#####",
+  "autoname": "naming_series:",
   "track_changes": 1,
   "fields": [
+    {
+      "fieldname": "naming_series",
+      "label": "Series",
+      "fieldtype": "Select",
+      "options": "BCE-.YYYY.-.#####",
+      "default": "BCE-.YYYY.-.#####",
+      "reqd": 1
+    },
     {
       "fieldname": "bid_record",
       "label": "Bid Record",
