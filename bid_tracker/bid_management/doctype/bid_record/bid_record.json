@@ -1,7 +1,7 @@
 {
   "doctype": "DocType",
   "name": "Bid Record",
-  "module": "Bid Tracker",
+  "module": "Bid Management",
   "custom": 0,
   "istable": 0,
   "editable_grid": 0,
@@ -17,6 +17,13 @@
       "label": "Bid Title",
       "fieldtype": "Data",
       "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "sector",
+      "label": "Sector",
+      "fieldtype": "Select",
+      "options": "Construction\nIT\nHealthcare\nEducation\nGovernment\nFinance\nOther",
       "in_list_view": 1
     },
     {
@@ -62,6 +69,11 @@
       "fieldtype": "Link",
       "options": "User",
       "default": "__user"
+    },
+    {
+      "fieldname": "assigned_team_members",
+      "label": "Assigned Team Members",
+      "fieldtype": "Data"
     },
     {
       "fieldname": "column_break_1",

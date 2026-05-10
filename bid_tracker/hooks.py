@@ -5,7 +5,7 @@ app_description = "Custom ERPNext module for pre-contract bid tracking"
 app_email = "support@example.com"
 app_license = "MIT"
 
-after_install = "bid_tracker.install.after_install"
+after_install = "bid_management.install.after_install"
 
 doctypes_js = {
     "Bid Record": "public/js/bid_record.js",
