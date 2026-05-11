@@ -9,6 +9,12 @@
   "roles": [
     {
       "role": "System Manager"
+    },
+    {
+      "role": "BD Team"
+    },
+    {
+      "role": "BD Management"
     }
   ]
 }
