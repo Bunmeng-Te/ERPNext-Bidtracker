@@ -22,3 +22,11 @@ doc_events = {
         "on_trash": "bid_tracker.bid_management.api.update_bid_record_totals",
     }
 }
+
+
+fixtures = [
+    "Workflow",
+    "Workflow State",
+    "Notification",
+    "Email Account"
+]
