@@ -223,5 +223,48 @@
   "slack_webhook_url": null,
   "subject": "Bid {{ doc.name }} has been closed",
   "value_changed": "status"
+ },
+ {
+  "attach_files": "",
+  "attach_print": 0,
+  "channel": "Email",
+  "condition": "doc.status == \"Withdrawn\"",
+  "date_changed": null,
+  "days_in_advance": 0,
+  "docstatus": 0,
+  "doctype": "Notification",
+  "document_type": "Bid Record",
+  "enabled": 1,
+  "event": "Value Change",
+  "from_attach_field": null,
+  "is_standard": 0,
+  "message": "<p>Bid Record <b>{{ doc.name }}</b> has been marked as <b>Withdrawn</b>.</p>\n\n<p><b>Customer:</b> {{ doc.customer }}</p>\n\n<p><b>Estimated Contract Value:</b> {{ doc.estimated_contract_value }}</p>\n\n<p><b>Bid Owner:</b> {{ doc.bid_owner }}</p>\n\n<p><b>Status:</b> {{ doc.status }}</p>\n\n<p>This bid opportunity has been withdrawn from the active bidding process.</p>",
+  "message_type": "Markdown",
+  "method": null,
+  "modified": "2026-05-12 10:41:32.853474",
+  "module": null,
+  "name": "Bid Withdrawn Notification",
+  "print_format": null,
+  "property_value": null,
+  "recipients": [
+   {
+    "bcc": null,
+    "cc": null,
+    "condition": null,
+    "parent": "Bid Withdrawn Notification",
+    "parentfield": "recipients",
+    "parenttype": "Notification",
+    "receiver_by_document_field": "bid_owner",
+    "receiver_by_role": null
+   }
+  ],
+  "send_system_notification": 1,
+  "send_to_all_assignees": 0,
+  "sender": "ERPNext Bid Tracker",
+  "sender_email": "bidtrackererpnext@gmail.com",
+  "set_property_after_alert": null,
+  "slack_webhook_url": null,
+  "subject": "Bid {{ doc.name }} has been withdrawn",
+  "value_changed": "status"
  }
 ]
