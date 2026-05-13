@@ -1,29 +1,88 @@
-# Bid Tracker ERPNext Extension Module
+# ERPNext BidTracker
 
-This is a custom Frappe / ERPNext app scaffold for the university assignment.
+ERPNext BidTracker is a custom ERPNext extension developed for pre-contract bid management, bid cost tracking, workflow approvals, and profitability analysis.
 
-It implements:
+This project extends ERPNext Version 15 using the Frappe Framework and provides a centralized system for managing business development bid operations, labour cost tracking, financial reporting, and role-based access control (RBAC).
 
-- Bid Record DocType
-- Bid Cost Entry DocType
-- Timesheet to Bid link (created on install)
-- Pre-contract P&L and ROI calculation
-- Recalculate button on Bid Record
-- Query Report: Bid P&L Summary
+---
 
-## Main files
+# Features
 
-- `bid_tracker/bid_tracker/doctype/bid_record/` - main bid record
-- `bid_tracker/bid_tracker/doctype/bid_cost_entry/` - manual costs
-- `bid_tracker/api.py` - whitelisted server methods
-- `bid_tracker/install.py` - installs custom fields and property setters
-- `bid_tracker/bid_tracker/report/bid_pnl_summary/` - query report
+## Bid Management
+- Create and manage Bid Records
+- Link Opportunities to Bid Records
+- Track bid lifecycle and workflow stages
+- Support bid status transitions:
+  - Draft
+  - Qualifying
+  - Active
+  - Submitted
+  - Won
+  - Lost
+  - Withdrawn
 
-## Install (inside bench)
+---
 
-```bash
-bench new-app bid_tracker
-# replace generated files with this package
-bench --site yoursite install-app bid_tracker
-bench --site yoursite migrate
-```
+## Cost Tracking
+- Track bid-related operational expenses
+- Create manual Bid Cost Entries
+- Integrate ERPNext Timesheets with Bid Records
+- Automatically aggregate labour costs
+- Calculate total bid costs dynamically
+
+---
+
+## Financial Reporting
+- Pre-contract P&L reporting
+- Bid profitability analysis
+- ROI and win/loss tracking
+- Aggregated dashboard metrics
+- Bid PNL Summary Report
+
+---
+
+## Role-Based Access Control (RBAC)
+
+Custom business roles:
+- BD Team
+- BD Manager
+- Finance Reviewer
+- Executive Viewer
+- Super User
+- System Manager
+
+Permission management includes:
+- Role Permissions Manager
+- Workflow permissions
+- Report and Page permissions
+
+---
+
+# Technology Stack
+
+- ERPNext v15
+- Frappe Framework v15
+- Python 3.11
+- MariaDB
+- Redis
+- Node.js
+- Yarn
+- Nginx
+- Azure Virtual Machine
+
+---
+
+# Project Structure
+
+```text
+apps/bid_tracker/
+├── bid_tracker/
+│   ├── bid_management/
+│   │   ├── doctype/
+│   │   ├── report/
+│   │   ├── public/
+│   │   └── api.py
+│   ├── fixtures/
+│   ├── patches/
+│   ├── hooks.py
+│   └── install.py
