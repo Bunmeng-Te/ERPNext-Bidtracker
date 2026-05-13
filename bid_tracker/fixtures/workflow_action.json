@@ -1,0 +1,485 @@
+[
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-12 11:27:33.542471",
+  "name": "mk7eo1fpi6",
+  "permitted_roles": [
+   {
+    "parent": "mk7eo1fpi6",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00001",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Active"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-12 11:27:54.015236",
+  "name": "mqk8msun6e",
+  "permitted_roles": [
+   {
+    "parent": "mqk8msun6e",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00003",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Submitted"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-12 11:28:04.186598",
+  "name": "mtpq8ssntp",
+  "permitted_roles": [
+   {
+    "parent": "mtpq8ssntp",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00004",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Submitted"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-12 11:28:20.855235",
+  "name": "n300pdnish",
+  "permitted_roles": [
+   {
+    "parent": "n300pdnish",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00005",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Submitted"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:12:56.009115",
+  "name": "6e0spcj7l1",
+  "permitted_roles": [
+   {
+    "parent": "6e0spcj7l1",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00001",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Submitted"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:45:16.773431",
+  "name": "pcf227ra6f",
+  "permitted_roles": [
+   {
+    "parent": "pcf227ra6f",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00010",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:45:18.929519",
+  "name": "pd5n7q4tv3",
+  "permitted_roles": [
+   {
+    "parent": "pd5n7q4tv3",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00010",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Qualifying"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:45:20.965498",
+  "name": "pdpq48mm41",
+  "permitted_roles": [
+   {
+    "parent": "pdpq48mm41",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00010",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Active"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:45:22.436065",
+  "name": "pe8pcqlpfc",
+  "permitted_roles": [
+   {
+    "parent": "pe8pcqlpfc",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00010",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Submitted"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:46:21.165860",
+  "name": "q0jh3mhcs0",
+  "permitted_roles": [
+   {
+    "parent": "q0jh3mhcs0",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00011",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:46:22.614208",
+  "name": "q124455695",
+  "permitted_roles": [
+   {
+    "parent": "q124455695",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00011",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Qualifying"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:46:23.804481",
+  "name": "q1eu2n00td",
+  "permitted_roles": [
+   {
+    "parent": "q1eu2n00td",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00011",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Active"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:46:25.710047",
+  "name": "q21g5feo68",
+  "permitted_roles": [
+   {
+    "parent": "q21g5feo68",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00011",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Submitted"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:47:16.619375",
+  "name": "qhun77ti4i",
+  "permitted_roles": [
+   {
+    "parent": "qhun77ti4i",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00012",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:47:18.406928",
+  "name": "qigoni2rrc",
+  "permitted_roles": [
+   {
+    "parent": "qigoni2rrc",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00012",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Qualifying"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:50:19.197754",
+  "name": "sb0hlj8n0o",
+  "permitted_roles": [
+   {
+    "parent": "sb0hlj8n0o",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00013",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:50:21.162752",
+  "name": "sbjenpm94a",
+  "permitted_roles": [
+   {
+    "parent": "sbjenpm94a",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00013",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Qualifying"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:50:22.577836",
+  "name": "sc1hr6nlon",
+  "permitted_roles": [
+   {
+    "parent": "sc1hr6nlon",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00013",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Active"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 15:51:08.813504",
+  "name": "sqgv8n38c4",
+  "permitted_roles": [
+   {
+    "parent": "sqgv8n38c4",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00014",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 16:06:19.653765",
+  "name": "5n4gdghtlo",
+  "permitted_roles": [
+   {
+    "parent": "5n4gdghtlo",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00015",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Draft"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 16:06:21.456981",
+  "name": "5nmbr28lle",
+  "permitted_roles": [
+   {
+    "parent": "5nmbr28lle",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00015",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Qualifying"
+ },
+ {
+  "completed_by": "Administrator",
+  "completed_by_role": "System Manager",
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 16:06:30.049769",
+  "name": "5qc5lf021n",
+  "permitted_roles": [
+   {
+    "parent": "5qc5lf021n",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00015",
+  "status": "Completed",
+  "user": null,
+  "workflow_state": "Active"
+ },
+ {
+  "completed_by": null,
+  "completed_by_role": null,
+  "docstatus": 0,
+  "doctype": "Workflow Action",
+  "modified": "2026-05-13 16:06:34.007163",
+  "name": "5rkdshggib",
+  "permitted_roles": [
+   {
+    "parent": "5rkdshggib",
+    "parentfield": "permitted_roles",
+    "parenttype": "Workflow Action",
+    "role": "System Manager"
+   }
+  ],
+  "reference_doctype": "Bid Record",
+  "reference_name": "BR-2026-00015",
+  "status": "Open",
+  "user": null,
+  "workflow_state": "Submitted"
+ }
+]
