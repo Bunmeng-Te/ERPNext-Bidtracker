@@ -28,4 +28,7 @@ fixtures = [
     "Workflow",
     "Workflow State",
     "Notification",
+    "Dashboard",
+    "Dashboard Chart",
+    "Number Card",
 ]
