@@ -14,8 +14,15 @@ class BidRecord(Document):
     def calculate_totals(self):
         self.total_manual_cost = self.get_manual_cost()
         self.total_timesheet_cost = self.get_timesheet_cost()
+
         self.total_bid_cost = flt(self.total_manual_cost) + flt(self.total_timesheet_cost)
         self.estimated_profit = flt(self.estimated_contract_value) - flt(self.total_bid_cost)
+
+        self.dashboard_estimated_contract_value = flt(self.estimated_contract_value)
+        self.dashboard_total_bid_cost = flt(self.total_bid_cost)
+        self.dashboard_estimated_profit = flt(self.estimated_profit)
+
+
         if flt(self.total_bid_cost) > 0:
             self.roi_ratio = self.estimated_profit / self.total_bid_cost
         else:

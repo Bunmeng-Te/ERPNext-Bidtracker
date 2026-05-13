@@ -126,6 +126,27 @@
       "fieldname": "notes",
       "label": "Notes",
       "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "dashboard_estimated_contract_value",
+      "label": "Dashboard Estimated Contract Value",
+      "fieldtype": "Float",
+      "read_only": 1,
+      "hidden": 1
+    },
+    {
+      "fieldname": "dashboard_total_bid_cost",
+      "label": "Dashboard Total Bid Cost",
+      "fieldtype": "Float",
+      "read_only": 1,
+      "hidden": 1
+    },
+    {
+      "fieldname": "dashboard_estimated_profit",
+      "label": "Dashboard Estimated Profit",
+      "fieldtype": "Float",
+      "read_only": 1,
+      "hidden": 1
     }
   ]
 }

@@ -1,1 +1,2 @@
 bid_tracker.patches.v1_0.add_timesheet_bid_record
+bid_tracker.patches.v1_0.backfill_dashboard_metrics
