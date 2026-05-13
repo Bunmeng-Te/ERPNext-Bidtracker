@@ -5,16 +5,5 @@
   "report_name": "Bid PnL Summary",
   "ref_doctype": "Bid Record",
   "report_type": "Script Report",
-  "is_standard": "Yes",
-  "roles": [
-    {
-      "role": "System Manager"
-    },
-    {
-      "role": "BD Team"
-    },
-    {
-      "role": "BD Management"
-    }
-  ]
+  "is_standard": "Yes"
 }
