@@ -1,3 +1,4 @@
+````md
 # ERPNext BidTracker
 
 ERPNext BidTracker is a custom ERPNext extension developed for pre-contract bid management, bid cost tracking, workflow approvals, and profitability analysis.
@@ -86,3 +87,94 @@ apps/bid_tracker/
 │   ├── patches/
 │   ├── hooks.py
 │   └── install.py
+````
+
+---
+
+# Installation
+
+## Initialize Frappe Bench
+
+```bash
+bench init frappe-bench --frappe-branch version-15
+```
+
+---
+
+## Install ERPNext
+
+```bash
+bench get-app erpnext --branch version-15
+
+bench new-site mysite.localhost
+
+bench --site mysite.localhost install-app erpnext
+```
+
+---
+
+## Install BidTracker App
+
+```bash
+cd apps
+
+git clone https://github.com/Bunmeng-Te/ERPNext-Bidtracker.git bid_tracker
+
+cd ..
+
+bench setup requirements
+
+bench --site mysite.localhost install-app bid_tracker
+
+bench migrate
+
+bench build
+```
+
+---
+
+# Running Development Server
+
+```bash
+bench start
+```
+
+Access ERPNext:
+
+```text
+http://localhost:8000
+```
+
+---
+
+# Production Deployment
+
+Production deployment includes:
+
+* Azure VM hosting
+* Nginx reverse proxy
+* HTTPS configuration
+* ERPNext production setup
+* Supervisor process management
+
+Production URL:
+
+```text
+https://erpnext-bidtracker.com
+```
+
+---
+
+# Contributors
+
+* Bunmeng Te
+* Rudra Pandey
+
+---
+
+# License
+
+This project is developed for academic and demonstration purposes.
+
+```
+```
