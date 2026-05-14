@@ -79,6 +79,11 @@
       "fieldtype": "Data"
     },
     {
+      "fieldname": "section_break_financial",
+      "fieldtype": "Section Break",
+      "label": "Financial Overview"
+    },
+    {
       "fieldname": "total_timesheet_cost",
       "label": "Total Timesheet Cost",
       "fieldtype": "Currency",
