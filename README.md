@@ -299,10 +299,13 @@ sudo supervisorctl restart all
 
 ---
 
-## Contributors
+## Team
 
-- Bunmeng Te
-- Rudra Pandey
+- Bunmeng Te — Technical Lead, Full Stack Development, Infrastructure Engineer & DevSecOps
+- Rudra Pandey — System Analysis & Development Support
+- Hai — Development Support
+- Zayah — Security Analysis & Documentation
+- Andy Le — Research & Documentation
 
 ---
 
