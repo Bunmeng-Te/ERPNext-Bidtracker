@@ -52,10 +52,6 @@
       "options": "Customer"
     },
     {
-      "fieldname": "column_break_1",
-      "fieldtype": "Column Break"
-    },
-    {
       "fieldname": "pursuit_decision_date",
       "label": "Pursuit Decision Date",
       "fieldtype": "Date"
@@ -78,9 +74,8 @@
       "fieldtype": "Data"
     },
     {
-      "fieldname": "section_break_financial",
-      "fieldtype": "Section Break",
-      "label": "Financial Overview"
+      "fieldname": "column_break_financial",
+      "fieldtype": "Column Break"
     },
     {
       "fieldname": "estimated_contract_value",
