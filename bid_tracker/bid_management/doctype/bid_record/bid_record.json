@@ -14,8 +14,12 @@
   "fields": [
     {
       "fieldname": "section_break_general",
-      "fieldtype": "Section Break",
-      "label": "Bid Information"
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "section_label_bid_information",
+      "fieldtype": "HTML",
+      "options": "<h4 style='margin-top:0'>Bid Information</h4>"
     },
     {
       "fieldname": "naming_series",
