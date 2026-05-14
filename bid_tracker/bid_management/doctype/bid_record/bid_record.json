@@ -78,6 +78,11 @@
       "fieldtype": "Column Break"
     },
     {
+      "fieldname": "section_label_financial",
+      "fieldtype": "HTML",
+      "options": "<h4 style='margin-top:0'>Financial Overview</h4>"
+    },
+    {
       "fieldname": "estimated_contract_value",
       "label": "Estimated Contract Value",
       "fieldtype": "Currency",
