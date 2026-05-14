@@ -47,6 +47,10 @@
       "options": "Customer"
     },
     {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
       "fieldname": "status",
       "label": "Status",
       "fieldtype": "Select",
@@ -81,10 +85,6 @@
       "fieldname": "assigned_team_members",
       "label": "Assigned Team Members",
       "fieldtype": "Data"
-    },
-    {
-      "fieldname": "column_break_1",
-      "fieldtype": "Column Break"
     },
     {
       "fieldname": "total_timesheet_cost",
