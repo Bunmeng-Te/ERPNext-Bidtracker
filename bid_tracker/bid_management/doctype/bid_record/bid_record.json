@@ -13,6 +13,11 @@
   "sort_order": "DESC",
   "fields": [
     {
+      "fieldname": "section_break_general",
+      "fieldtype": "Section Break",
+      "label": "Bid Information"
+    },
+    {
       "fieldname": "naming_series",
       "label": "Series",
       "fieldtype": "Select",
