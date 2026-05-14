@@ -56,12 +56,6 @@
       "fieldtype": "Column Break"
     },
     {
-      "fieldname": "estimated_contract_value",
-      "label": "Estimated Contract Value",
-      "fieldtype": "Currency",
-      "reqd": 1
-    },
-    {
       "fieldname": "pursuit_decision_date",
       "label": "Pursuit Decision Date",
       "fieldtype": "Date"
@@ -87,6 +81,12 @@
       "fieldname": "section_break_financial",
       "fieldtype": "Section Break",
       "label": "Financial Overview"
+    },
+    {
+      "fieldname": "estimated_contract_value",
+      "label": "Estimated Contract Value",
+      "fieldtype": "Currency",
+      "reqd": 1
     },
     {
       "fieldname": "total_timesheet_cost",
