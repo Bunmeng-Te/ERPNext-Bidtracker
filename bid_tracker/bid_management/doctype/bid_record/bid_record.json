@@ -47,16 +47,16 @@
       "options": "Customer"
     },
     {
-      "fieldname": "column_break_1",
-      "fieldtype": "Column Break"
-    },
-    {
       "fieldname": "status",
       "label": "Status",
       "fieldtype": "Select",
       "options": "Draft\nQualifying\nActive\nSubmitted\nWon\nLost\nWithdrawn",
       "default": "Draft",
       "in_list_view": 1
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
     },
     {
       "fieldname": "estimated_contract_value",
