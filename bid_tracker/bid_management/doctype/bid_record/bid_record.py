@@ -3,30 +3,6 @@ from frappe.model.document import Document
 
 
 class BidRecord(Document):
-    def autoname(self):
-
-        existing = frappe.get_all(
-            "Bid Record",
-            pluck="name"
-        )
-
-        used_numbers = []
-
-        for name in existing:
-            try:
-                number = int(name.split("-")[-1])
-                used_numbers.append(number)
-            except:
-                pass
-
-        next_number = 1
-
-        while next_number in used_numbers:
-            next_number += 1
-
-        year = frappe.utils.now_datetime().year
-
-        self.name = f"BR-{year}-{next_number:05d}"
 
     def validate(self):
         self.sync_customer_from_opportunity()
