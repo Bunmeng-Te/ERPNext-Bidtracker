@@ -75,17 +75,17 @@ class BidRecord(Document):
                 "bid_submission_date": "Bid Submission Date"
             }
 
-        missing = []
+            missing = []
 
-        for field, label in required_fields.items():
-            if not self.get(field):
-                missing.append(label)
+            for field, label in required_fields.items():
+                if not self.get(field):
+                    missing.append(label)
 
-        if missing:
-            frappe.throw(
-                "Cannot submit Bid Record. Missing required fields:<br><br>"
-                + "<br>".join(missing)
-            )
+            if missing:
+                frappe.throw(
+                    "Cannot submit Bid Record. Missing required fields:<br><br>"
+                    + "<br>".join(missing)
+                )
 
 
 def flt(value):
