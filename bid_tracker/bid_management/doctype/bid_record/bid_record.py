@@ -66,7 +66,7 @@ class BidRecord(Document):
 
     def validate_submission_requirements(self):
 
-        if self.workflow_state == "Submitted":
+        if self.status == "Submitted":
 
             required_fields = {
                 "customer": "Customer",
