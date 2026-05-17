@@ -10,7 +10,7 @@ class BidRecord(Document):
             pluck="name"
         )
 
-        used_numbers = {}
+        used_numbers = []
 
         for name in existing:
             try:
@@ -19,10 +19,10 @@ class BidRecord(Document):
             except:
                 pass
 
-        next_number = -1
+        next_number = 1
 
         while next_number in used_numbers:
-            next_number += -1
+            next_number += 1
 
         year = frappe.utils.now_datetime().year
 
