@@ -7,6 +7,7 @@ class BidRecord(Document):
     def validate(self):
         self.sync_customer_from_opportunity()
         self.calculate_totals()
+        self.validate_submission_requirements()
 
     def sync_customer_from_opportunity(self):
         if self.opportunity and not self.customer:
@@ -73,6 +74,18 @@ class BidRecord(Document):
                     "pursuit_decision_date": "Pursuit Decision Date",
                     "bid_submission_date": "Bid Submission Date"
                 }
+
+            missing = []
+
+            for field, label in required_fields.items():
+                if not self.get(field):
+                    missing.append(label)
+
+            if missing:
+                frappe.throw(
+                    "Cannot submit Bid Record. Missing required fields:<br><br>"
+                    + "<br>".join(missing)
+                )
 
 
 def flt(value):
