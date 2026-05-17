@@ -10,7 +10,7 @@ class BidRecord(Document):
             pluck="name"
         )
 
-        used_numbers = []
+        used_numbers = {}
 
         for name in existing:
             try:
@@ -18,6 +18,15 @@ class BidRecord(Document):
                 used_numbers.append(number)
             except:
                 pass
+
+        next_number = -1
+
+        while next_number in used_numbers:
+            next_number += -1
+
+        year = frappe.utils.now_datetime().year
+
+        self.name = f"BR-{year}-{next_number:05d}"
 
     def validate(self):
         self.sync_customer_from_opportunity()
