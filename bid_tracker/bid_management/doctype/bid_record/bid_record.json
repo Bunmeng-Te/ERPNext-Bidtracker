@@ -53,8 +53,7 @@
       "fieldname": "customer",
       "label": "Customer",
       "fieldtype": "Link",
-      "options": "Customer",
-      "reqd": 1
+      "options": "Customer"
     },
     {
       "fieldname": "pursuit_decision_date",
