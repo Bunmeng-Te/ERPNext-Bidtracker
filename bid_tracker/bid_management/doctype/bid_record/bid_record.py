@@ -3,6 +3,22 @@ from frappe.model.document import Document
 
 
 class BidRecord(Document):
+    def autoname(self):
+
+        existing = frappe.get_all(
+            "Bid Record",
+            pluck="name"
+        )
+
+        used_numbers = []
+
+        for name in existing:
+            try:
+                number = int(name.split("-")[-1])
+                used_numbers.append(number)
+            except:
+                pass
+
     def validate(self):
         self.sync_customer_from_opportunity()
         self.calculate_totals()

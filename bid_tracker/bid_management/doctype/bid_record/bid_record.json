@@ -22,7 +22,7 @@
       "options": "<h4 style='margin-top:0'>Bid Information</h4>"
     },
     {
-      "fieldname": "naming_series",
+      "fieldname": "autoname",
       "label": "Series",
       "fieldtype": "Select",
       "options": "BR-.YYYY.-.#####",
