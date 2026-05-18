@@ -7,6 +7,7 @@
   "editable_grid": 0,
   "engine": "InnoDB",
   "autoname": "naming_series:",
+  "allow_copy": 1,
   "track_changes": 1,
   "quick_entry": 0,
   "sort_field": "modified",

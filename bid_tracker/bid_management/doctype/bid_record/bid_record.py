@@ -4,6 +4,9 @@ from frappe.model.document import Document
 
 class BidRecord(Document):
 
+    def before_insert(self):
+        self.name = None
+
     def validate(self):
         self.sync_customer_from_opportunity()
         self.calculate_totals()
