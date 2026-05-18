@@ -33,12 +33,7 @@ fixtures = [
     "Dashboard",
     "Number Card",
     "Report",
-    {
-        "dt": "Workspace",
-        "filters": [
-            ["name", "in", ["Bid Tracker"]]
-        ]
-    },
+    "Workspace",
     {
     "dt": "Dashboard Chart",
     "filters": [
