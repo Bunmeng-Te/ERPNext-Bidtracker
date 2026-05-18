@@ -31,7 +31,6 @@ fixtures = [
     "Notification",
     "Role",
     "Dashboard",
-    "Dashboard Chart",
     "Number Card",
     "Report",
     {
@@ -39,5 +38,11 @@ fixtures = [
         "filters": [
             ["name", "in", ["Bid Tracker"]]
         ]
+    },
+    {
+    "dt": "Dashboard Chart",
+    "filters": [
+        ["name", "in", ["Bid Status Breakdown"]]
+    ]
     }
 ]
