@@ -481,69 +481,7 @@
   "javascript": null,
   "json": "{}",
   "letter_head": null,
-  "modified": "2026-05-18 10:16:29.426846",
-  "module": "Bid Management",
-  "name": "Bid Record",
-  "prepared_report": 0,
-  "query": null,
-  "ref_doctype": "Bid Record",
-  "reference_report": null,
-  "report_name": "Bid Record",
-  "report_script": null,
-  "report_type": "Report Builder",
-  "roles": [
-   {
-    "parent": "Bid Record",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "System Manager"
-   },
-   {
-    "parent": "Bid Record",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "BD Manager"
-   },
-   {
-    "parent": "Bid Record",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "BD Team"
-   },
-   {
-    "parent": "Bid Record",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Executive Viewer"
-   },
-   {
-    "parent": "Bid Record",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Finance Reviewer"
-   },
-   {
-    "parent": "Bid Record",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Super User"
-   }
-  ],
-  "timeout": 0
- },
- {
-  "add_total_row": 0,
-  "add_translate_data": 0,
-  "columns": [],
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Report",
-  "filters": [],
-  "is_standard": "No",
-  "javascript": null,
-  "json": "{}",
-  "letter_head": null,
-  "modified": "2026-05-18 10:17:10.560845",
+  "modified": "2026-05-18 12:58:34.898676",
   "module": "Projects",
   "name": "Timesheet Report",
   "prepared_report": 0,
@@ -558,75 +496,37 @@
     "parent": "Timesheet Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "Projects User"
+    "role": "BD Team"
    },
    {
     "parent": "Timesheet Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "HR User"
+    "role": "BD Manager"
    },
    {
     "parent": "Timesheet Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "Manufacturing User"
+    "role": "Executive Viewer"
    },
    {
     "parent": "Timesheet Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "Employee"
+    "role": "Finance Reviewer"
    },
    {
     "parent": "Timesheet Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "Accounts User"
-   }
-  ],
-  "timeout": 0
- },
- {
-  "add_total_row": 0,
-  "add_translate_data": 0,
-  "columns": [],
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Report",
-  "filters": [],
-  "is_standard": "No",
-  "javascript": null,
-  "json": "{}",
-  "letter_head": null,
-  "modified": "2026-05-18 10:30:44.549959",
-  "module": "Setup",
-  "name": "Employee",
-  "prepared_report": 0,
-  "query": null,
-  "ref_doctype": "Employee",
-  "reference_report": null,
-  "report_name": "Employee",
-  "report_script": null,
-  "report_type": "Report Builder",
-  "roles": [
-   {
-    "parent": "Employee",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Employee"
+    "role": "Super User"
    },
    {
-    "parent": "Employee",
+    "parent": "Timesheet Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "HR User"
-   },
-   {
-    "parent": "Employee",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "HR Manager"
+    "role": "System Manager"
    }
   ],
   "timeout": 0
@@ -1317,7 +1217,7 @@
   "javascript": null,
   "json": "{}",
   "letter_head": null,
-  "modified": "2026-05-18 10:17:39.591445",
+  "modified": "2026-05-18 12:57:39.859371",
   "module": "CRM",
   "name": "Opportunity Report",
   "prepared_report": 0,
@@ -1332,13 +1232,37 @@
     "parent": "Opportunity Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "Sales User"
+    "role": "BD Team"
    },
    {
     "parent": "Opportunity Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "Sales Manager"
+    "role": "BD Manager"
+   },
+   {
+    "parent": "Opportunity Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Executive Viewer"
+   },
+   {
+    "parent": "Opportunity Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Finance Reviewer"
+   },
+   {
+    "parent": "Opportunity Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Super User"
+   },
+   {
+    "parent": "Opportunity Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
    }
   ],
   "timeout": 0
@@ -1355,7 +1279,7 @@
   "javascript": null,
   "json": "{}",
   "letter_head": null,
-  "modified": "2026-05-18 10:29:14.622411",
+  "modified": "2026-05-18 12:56:48.224558",
   "module": "Selling",
   "name": "Customer Report",
   "prepared_report": 0,
@@ -1370,43 +1294,99 @@
     "parent": "Customer Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "Sales User"
+    "role": "BD Manager"
    },
    {
     "parent": "Customer Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "Sales Manager"
+    "role": "BD Team"
    },
    {
     "parent": "Customer Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "Sales Master Manager"
+    "role": "Executive Viewer"
    },
    {
     "parent": "Customer Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "Stock User"
+    "role": "Finance Reviewer"
    },
    {
     "parent": "Customer Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "Stock Manager"
+    "role": "Super User"
    },
    {
     "parent": "Customer Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "Accounts User"
-   },
+    "role": "System Manager"
+   }
+  ],
+  "timeout": 0
+ },
+ {
+  "add_total_row": 0,
+  "add_translate_data": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{}",
+  "letter_head": null,
+  "modified": "2026-05-18 12:56:10.163686",
+  "module": "Bid Management",
+  "name": "Bid Record Report",
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Bid Record",
+  "reference_report": null,
+  "report_name": "Bid Record Report",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
    {
-    "parent": "Customer Report",
+    "parent": "Bid Record Report",
     "parentfield": "roles",
     "parenttype": "Report",
-    "role": "Accounts Manager"
+    "role": "System Manager"
+   },
+   {
+    "parent": "Bid Record Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "BD Manager"
+   },
+   {
+    "parent": "Bid Record Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "BD Team"
+   },
+   {
+    "parent": "Bid Record Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Executive Viewer"
+   },
+   {
+    "parent": "Bid Record Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Finance Reviewer"
+   },
+   {
+    "parent": "Bid Record Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Super User"
    }
   ],
   "timeout": 0
