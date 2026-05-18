@@ -33,4 +33,5 @@ fixtures = [
     "Dashboard",
     "Dashboard Chart",
     "Number Card",
+    "Report"
 ]
