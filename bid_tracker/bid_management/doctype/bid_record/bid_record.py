@@ -31,7 +31,7 @@ class BidRecord(Document):
         if flt(self.total_bid_cost) > 0:
             self.roi_ratio = self.estimated_profit / self.total_bid_cost
         else:
-            self.roi_ratio = 0
+            self.roi_ratio = None
 
     def get_manual_cost(self):
         return frappe.db.sql(
