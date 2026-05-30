@@ -334,9 +334,9 @@ sudo supervisorctl restart all
 
 - Bunmeng Te — Technical Lead, Full Stack Developer, Infrastructure Engineer & DevSecOps
 - Rudra Pandey — Development Support & QA Tester
-- Hai — Risk Analyst & QA Tester
-- Zayah — Security Analyst & Prototyping
-- Andy Le — Research & Documentation
+- Hai Dang Nguyen — Risk Analyst & QA Tester
+- Zayah Humphries — Security Analyst & Prototyping
+- Hung Le — Research & Documentation
 
 ---
 
