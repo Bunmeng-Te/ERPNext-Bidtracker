@@ -2,7 +2,7 @@
 
 # ERPNext BidTracker
 
-Custom ERPNext extension for pre-contract bid management, bid cost tracking, workflow approvals, profitability analysis, and role-based operational management.
+Custom ERPNext extension module for pre-contract bid management, bid cost tracking, workflow approvals, profitability analysis, ROI reporting, and role-based operational management.
 
 Built on top of ERPNext v15 and the Frappe Framework.
 
@@ -12,22 +12,24 @@ Built on top of ERPNext v15 and the Frappe Framework.
 
 ## Overview
 
-ERPNext BidTracker is a custom ERPNext application developed to support business development and pre-contract bid operations within a centralized ERP environment.
+ERPNext BidTracker is a custom Frappe application built on ERPNext to support pre-contract bid management for Prompcorp Facilities Management.
 
-The system extends ERPNext with custom DocTypes, workflow automation, dashboard analytics, reporting, bid cost tracking, and role-based access control (RBAC).
+The system centralizes bid records, CRM opportunities, staff timesheets, bid-related expenses, workflow approvals, profitability analysis, ROI calculations, reporting, and role-based access control within a single ERP platform.
 
-The application is designed as a multi-user centralized web platform accessible through both desktop and mobile browsers.
+It extends ERPNext with custom DocTypes, workflow automation, dashboard analytics, script reports, notification logic, and controlled user access for business development, finance review, and executive visibility.
+
+The application is designed as a centralized multi-user web platform accessible through both desktop and mobile browsers.
 
 ---
 
 ## Core Features
 
-### Bid Management
+### Bid Record Management
 
 - Create and manage Bid Records
-- Link Opportunities to Bid Records
-- Track bid lifecycle stages
-- Workflow-driven bid approval process
+- Link Bid Records with ERPNext CRM Opportunities
+- Track bid status, assigned teams, sectors, and bid ownership
+- Manage bid lifecycle stages from draft to final outcome
 - Support multiple bid statuses:
   - Draft
   - Qualifying
@@ -39,33 +41,43 @@ The application is designed as a multi-user centralized web platform accessible 
 
 ---
 
-### Cost Tracking
+### Timesheet Integration
 
-- Track bid-related operational expenses
-- Manual Bid Cost Entry management
-- ERPNext Timesheet integration
-- Labour cost aggregation
-- Dynamic bid cost calculation
+- Link ERPNext Timesheets to Bid Records
+- Record labour hours against specific bids
+- Automatically aggregate labour hours and labour costs
+- Support bid-level visibility of staff time contribution
+
+---
+
+### Bid Cost Tracking
+
+- Create and manage manual Bid Cost Entries
+- Track travel, printing, subcontractor, material, and administrative expenses
+- Record non-timesheet bid-related costs
+- Aggregate manual costs with timesheet labour costs
+- Calculate total bid cost dynamically
 
 ---
 
 ### Financial Reporting
 
-- Pre-contract P&L analysis
-- Bid profitability tracking
-- ROI visibility
-- Win/Loss reporting
-- Dashboard metrics
-- Bid PnL Summary Script Report
+- Generate pre-contract Profit & Loss analysis
+- Calculate ROI ratio and profitability metrics
+- Track estimated contract value and estimated profit
+- Support management decision-making before bid submission
+- Provide dashboard metrics and bid performance visibility
+- Include Bid PnL Summary Script Report
 
 ---
 
 ### Workflow Automation
 
-- Multi-stage workflow approvals
-- Workflow state transitions
-- Role-based workflow actions
-- Notification-driven approval flow
+- Manage multi-stage bid approval workflows
+- Control bid status transitions through ERPNext Workflow
+- Support role-based workflow actions
+- Trigger notification-driven approval and review flow
+- Improve visibility of bid progress and decision points
 
 ---
 
@@ -77,6 +89,9 @@ Custom business roles:
 - BD Manager
 - Finance Reviewer
 - Executive Viewer
+
+Administrative and testing roles include:
+
 - Super User
 - System Manager
 
@@ -87,6 +102,22 @@ Permission configuration includes:
 - Report permissions
 - Page permissions
 - Dashboard visibility controls
+- Sensitive financial information protection
+
+---
+
+### ERPNext Integration
+
+The system integrates with ERPNext modules and platform features including:
+
+- CRM Opportunities
+- Timesheets
+- Projects
+- Users and Roles
+- Workflow Engine
+- Email Notifications
+- Dashboards
+- Script Reports
 
 ---
 
@@ -301,10 +332,10 @@ sudo supervisorctl restart all
 
 ## Team
 
-- Bunmeng Te — Technical Lead, Full Stack Development, Infrastructure Engineer & DevSecOps
-- Rudra Pandey — System Analysis & Development Support
-- Hai — Development Support
-- Zayah — Security Analysis & Documentation
+- Bunmeng Te — Technical Lead, Full Stack Developer, Infrastructure Engineer & DevSecOps
+- Rudra Pandey — Development Support & QA Tester
+- Hai — Risk Analyst & QA Tester
+- Zayah — Security Analyst & Prototyping
 - Andy Le — Research & Documentation
 
 ---
